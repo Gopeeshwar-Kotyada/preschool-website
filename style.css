@@ -1354,3 +1354,54 @@ img {
         text-align: center;
     }
 }
+
+/* ============================================================
+   SIDEBAR "LEARN MORE" BUTTON COLOR CORRECTIONS
+   ============================================================ */
+
+/* 🎯 STYLE RULES applied consistently */
+.right-column .sidebar-card .btn {
+    color: #FFFFFF !important;
+    border: none !important;
+    border-radius: 6px !important;
+    padding: 6px 14px !important;
+    font-size: 13px !important;
+    font-weight: 500 !important;
+}
+
+/* ✨ HOVER EFFECT (SUBTLE) */
+.right-column .sidebar-card .btn:hover {
+    filter: brightness(0.92) !important;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15) !important;
+}
+
+/* 1. Toddler (Right Sidebar) -> #FFA726 (Orange) */
+.sidebar-programs .sidebar-program-list li:nth-child(1) .btn {
+    background: #FFA726 !important;
+}
+
+/* 2. Preschool (Right Sidebar) -> #FF6B81 (Pink) */
+.sidebar-programs .sidebar-program-list li:nth-child(2) .btn {
+    background: #FF6B81 !important;
+}
+
+/* 3. Kindergarten (Right Sidebar) -> #4A90E2 (Blue) */
+.sidebar-programs .sidebar-program-list li:nth-child(3) .btn {
+    background: #4A90E2 !important;
+}
+
+/* 4. Notice Board Buttons */
+.sidebar-notice .notice-item:nth-of-type(1) .btn {
+    background: #FF6B81 !important; /* Holiday Orientation */
+}
+.sidebar-notice .notice-item:nth-of-type(2) .btn {
+    background: #4A90E2 !important; /* Craft Day Workshop */
+}
+
+/* 5. Latest News Buttons */
+.sidebar-news .news-item:nth-of-type(1) .btn {
+    background: #7CB342 !important; /* First News Button */
+}
+.sidebar-news .news-item:nth-of-type(2) .btn {
+    background: #FFA726 !important; /* Second News Button */
+}
