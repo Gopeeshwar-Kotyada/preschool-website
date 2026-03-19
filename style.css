@@ -58,10 +58,10 @@ img {
 
 .btn {
     display: inline-block;
-    padding: 10px 24px;
-    border-radius: 8px;
+    padding: 6px 14px;
+    border-radius: 6px;
     font-family: 'Poppins', sans-serif;
-    font-size: 14px;
+    font-size: 13px;
     font-weight: 500;
     cursor: pointer;
     border: none;
@@ -124,10 +124,10 @@ img {
    TOP BAR
    ============================================================ */
 .top-bar {
-    background: #fff;
+    background-color: #F5E6CC;
     border-bottom: 1px solid #eee;
     font-size: 13px;
-    color: #777;
+    color: #2C3E50;
     padding: 6px 0;
 }
 
@@ -284,7 +284,7 @@ img {
     background: #FFA726;
     color: #fff;
     padding: 9px 22px;
-    border-radius: 24px;
+    border-radius: 4px;
     font-family: 'Poppins', sans-serif;
     font-size: 14px;
     font-weight: 500;
@@ -385,7 +385,7 @@ img {
 .hero-image img {
     width: 420px;
     height: auto;
-    border-radius: 20px;
+    border-radius: 10px;
     object-fit: cover;
 }
 
@@ -443,7 +443,7 @@ img {
    FEATURE CARDS
    ============================================================ */
 .features {
-    margin-top: -30px;
+    padding-top: 30px;
     position: relative;
     z-index: 10;
     padding-bottom: 30px;
@@ -458,10 +458,12 @@ img {
 .feature-card {
     background: #fff;
     border-radius: 10px;
-    padding: 24px 20px;
+    padding: 10px 14px;
+    height: auto;
+    min-height: 55px;
     display: flex;
     align-items: center;
-    gap: 14px;
+    gap: 10px;
     box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
     transition: all 0.3s ease;
     cursor: pointer;
@@ -472,21 +474,22 @@ img {
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
 }
 
-.feature-card span {
+.feature-card h4 {
     font-family: 'Poppins', sans-serif;
-    font-size: 15px;
+    font-size: 14px;
     font-weight: 500;
     color: #2C3E50;
+    margin: 0;
 }
 
 .feature-icon {
-    width: 50px;
-    height: 50px;
+    width: 28px;
+    height: 28px;
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 20px;
+    font-size: 14px;
     color: #fff;
     flex-shrink: 0;
 }
@@ -633,18 +636,12 @@ img {
     box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
 }
 
-.gallery-images-row {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 8px;
-    margin-bottom: 12px;
-}
-
-.gallery-images-row img {
+.gallery img {
     width: 100%;
-    height: 90px;
+    height: 180px;
     object-fit: cover;
     border-radius: 8px;
+    margin-bottom: 12px;
 }
 
 .gallery-item h4 {
@@ -1161,7 +1158,11 @@ img {
     }
 
     .btn-apply-nav {
-        display: none;
+        display: inline-block;
+        padding: 6px 12px;
+        font-size: 12px;
+        margin-left: auto;
+        margin-right: 15px;
     }
 
     /* Hero */
@@ -1372,7 +1373,7 @@ img {
 /* ✨ HOVER EFFECT (SUBTLE) */
 .right-column .sidebar-card .btn:hover {
     filter: brightness(0.92) !important;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.15) !important;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15) !important;
 }
 
 /* 1. Toddler (Right Sidebar) -> #FFA726 (Orange) */
@@ -1392,16 +1393,70 @@ img {
 
 /* 4. Notice Board Buttons */
 .sidebar-notice .notice-item:nth-of-type(1) .btn {
-    background: #FF6B81 !important; /* Holiday Orientation */
+    background: #FF6B81 !important;
+    /* Holiday Orientation */
 }
+
 .sidebar-notice .notice-item:nth-of-type(2) .btn {
-    background: #4A90E2 !important; /* Craft Day Workshop */
+    background: #4A90E2 !important;
+    /* Craft Day Workshop */
 }
 
 /* 5. Latest News Buttons */
 .sidebar-news .news-item:nth-of-type(1) .btn {
-    background: #7CB342 !important; /* First News Button */
+    background: #7CB342 !important;
+    /* First News Button */
 }
+
 .sidebar-news .news-item:nth-of-type(2) .btn {
-    background: #FFA726 !important; /* Second News Button */
+    background: #FFA726 !important;
+    /* Second News Button */
+}
+
+/* 6. Feedback Highlight and Footer overrides */
+.about-subtitle {
+    color: #000000;
+    font-weight: 600;
+}
+
+.footer {
+    background-color: #FFF5E1 !important;
+    color: #2C3E50 !important;
+}
+
+.footer-bottom {
+    background-color: #EBD9B8 !important;
+}
+
+.footer p,
+.footer h4,
+.footer li,
+.footer .footer-contact i {
+    color: #2C3E50 !important;
+}
+
+.footer a {
+    color: #2C3E50 !important;
+    font-weight: 500;
+}
+
+.footer a:hover {
+    color: #FF6B81 !important;
+}
+
+/* Logo Colorization */
+.logo-k {
+    color: #4A90E2;
+}
+
+.logo-i {
+    color: #FF6B81;
+}
+
+.logo-d {
+    color: #7CB342;
+}
+
+.logo-s {
+    color: #FFA726;
 }
