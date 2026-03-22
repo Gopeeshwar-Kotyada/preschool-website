@@ -862,14 +862,20 @@ img {
 
 /* Testimonials */
 .testimonial-card {
-    display: flex;
-    gap: 16px;
-    padding: 20px 0;
-    border-bottom: 1px solid #eee;
+    background: transparent !important;
+    padding: 15px 0 !important;
+    border-radius: 0 !important;
+    box-shadow: none !important;
+    width: 100% !important;
+    display: flex !important;
+    align-items: flex-start !important;
+    gap: 15px !important;
+    border-bottom: 1px solid #eee !important;
 }
 
 .testimonial-card:last-child {
-    border-bottom: none;
+    border-bottom: none !important;
+    padding-bottom: 0 !important;
 }
 
 .testimonial-avatar {
@@ -913,8 +919,10 @@ img {
 .stat-card {
     display: flex;
     align-items: center;
-    gap: 16px;
-    padding: 18px 0;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 10px 0;
+    margin-bottom: 12px;
     border-bottom: 1px solid #eee;
 }
 
@@ -1376,20 +1384,7 @@ img {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15) !important;
 }
 
-/* 1. Toddler (Right Sidebar) -> #FFA726 (Orange) */
-.sidebar-programs .sidebar-program-list li:nth-child(1) .btn {
-    background: #FFA726 !important;
-}
 
-/* 2. Preschool (Right Sidebar) -> #FF6B81 (Pink) */
-.sidebar-programs .sidebar-program-list li:nth-child(2) .btn {
-    background: #FF6B81 !important;
-}
-
-/* 3. Kindergarten (Right Sidebar) -> #4A90E2 (Blue) */
-.sidebar-programs .sidebar-program-list li:nth-child(3) .btn {
-    background: #4A90E2 !important;
-}
 
 /* 4. Notice Board Buttons */
 .sidebar-notice .notice-item:nth-of-type(1) .btn {
@@ -1459,4 +1454,128 @@ img {
 
 .logo-s {
     color: #FFA726;
+}
+
+/* ============================================================
+   FEEDBACK: TYPOGRAPHY, STATS, & TESTIMONIALS SIZING
+   ============================================================ */
+.program-card-title,
+.sidebar-program-info strong {
+    color: #2C3E50 !important;
+    font-weight: 600 !important;
+}
+
+.statistics-section .ts-box {
+    padding: 15px !important;
+    border-radius: 10px !important;
+}
+
+.stat-1 {
+    color: #4A90E2 !important;
+}
+
+.stat-2 {
+    color: #FFA726 !important;
+}
+
+.stat-3 {
+    color: #4CAF50 !important;
+}
+
+.testimonials-section .ts-box {
+    padding: 20px !important;
+}
+
+/* NEW RESTRUCTURED LAYOUT & COLORS */
+
+/* Testimonials Stack Container */
+.testimonials {
+    display: flex !important;
+    flex-direction: column !important;
+    background: #ffffff !important;
+    padding: 20px !important;
+    border-radius: 10px !important;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08) !important;
+    gap: 0 !important;
+}
+
+/* Compact Statistics */
+.stat-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.stat-item h3 {
+    font-size: 16px;
+    margin: 0;
+}
+
+.stat-blue {
+    color: #4A90E2 !important;
+}
+
+.stat-yellow {
+    color: #FFA726 !important;
+}
+
+.stat-green {
+    color: #4CAF50 !important;
+}
+
+/* Program Text Colors LEFT SIDE */
+.program-card .toddler {
+    color: #4A90E2 !important;
+}
+
+.program-card .preschool {
+    color: #FFA726 !important;
+}
+
+.program-card .prek {
+    color: #FF6B81 !important;
+}
+
+/* Program Strict Colors RIGHT SIDE */
+/* TODDLER */
+.sidebar-item.toddler {
+    background-color: #E3F2FD !important;
+}
+
+.sidebar-item.toddler .title {
+    color: #4A90E2 !important;
+}
+
+.sidebar-item.toddler .learn-btn {
+    background-color: #4A90E2 !important;
+    color: #ffffff !important;
+}
+
+/* PRESCHOOL */
+.sidebar-item.preschool {
+    background-color: #FFF3E0 !important;
+}
+
+.sidebar-item.preschool .title {
+    color: #FFA726 !important;
+}
+
+.sidebar-item.preschool .learn-btn {
+    background-color: #FFA726 !important;
+    color: #ffffff !important;
+}
+
+/* KINDERGARTEN */
+.sidebar-item.kindergarten {
+    background-color: #FCE4EC !important;
+}
+
+.sidebar-item.kindergarten .title {
+    color: #FF6B81 !important;
+}
+
+.sidebar-item.kindergarten .learn-btn {
+    background-color: #FF6B81 !important;
+    color: #ffffff !important;
 }
